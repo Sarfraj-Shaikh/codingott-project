@@ -20,7 +20,7 @@ Is section me maine **JavaScript ka use karke banaye gaye projects** ke **live d
 
 👇 Toh niche diya gaya link visit karein:
 
-🔗 **Live Demo Link:**
+🔗 **Live Demo Link:** [Coming Soon](#)
 
 ---
 
@@ -32,7 +32,7 @@ Agar aapko **sirf JavaScript projects ka source code** chahiye — toh niche diy
 - Proper folder structure ke sath
 - Clean aur readable code
 
-🔗 **JavaScript Repo Link:** 
+🔗 **JavaScript Repo Link:** [Click Here To View](https://github.com/Sarfraj-Shaikh/codingott-project/tree/main/Coding%20OTT%20-%20Project/JavaScript)
 
 ---
 
@@ -52,8 +52,8 @@ Projects ko better UI aur design dene ke liye:
 - External **CSS / JS libraries**
 - Icons, fonts, animations (as required)
 
-⚠️ Note:  
-Third-party code **sirf UI/UX improve karne ke liye** use kiya jata hai, core logic khud likha gaya hai.
+**⚠️ Note:** 
+Third-party code **sirf UI/UX improve karne ke liye** use kiya jata hai, core logic hud likha gaya hai.
 
 ---
 

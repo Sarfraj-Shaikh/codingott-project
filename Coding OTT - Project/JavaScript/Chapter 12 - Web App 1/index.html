@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 12 – Part 1</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js"></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter: 12 - Web App 1
+    Date: 03-01-2026 | 6:22 AM - 11:22 AM
+    =====================================-->
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Please write a program that demonstrates the results of CSS properties using JavaScript selectors, along with functions, variables, and CSS. -->
+        <div class="result-bar">
+            <div class="res-top-color">
+                <p>Results of CSS Properties</p>
+            </div>
+
+            <div class="result-container">
+                <h2 id="res-text">Sarfraj</h2>
+            </div>
+
+            <div class="prop-bar">
+
+                <div class="prop-container">
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-color-filter-line"></i>Colors</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span class="blue" onclick="blueText()">Blue</span>
+                            <span class="green" onclick="greenText()">Green</span>
+                            <span class="red" onclick="redText()">Red</span>
+                            <span class="white" onclick="whiteText()">White</span>
+                            <span class="black" onclick="blackText()">Black</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-t-box-line"></i>Sizes</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span onclick="pixcel()">20px</span>
+                            <span onclick="perc()">195%</span>
+                            <span onclick="rem()">2.5 rem</span>
+                            <span onclick="em()">3 em</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-landscape-line"></i>Background</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span class="red" onclick="redBg()">Red BG</span>
+                            <span class="green" onclick="greenBg()">Green BG</span>
+                            <span class="blue" onclick="blueBg()">Blue BG</span>
+                            <span onclick="imgBg()">IMG BG</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-shape-line"></i>Border</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span class="red" onclick="redBorder()">Red Border</span>
+                            <span class="green" onclick="greenBorder()">Green Border</span>
+                            <span class="blue" onclick="blueBorder()">Blue Border</span>
+                            <span onclick="blackBorder()">Black Border</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-drag-move-line"></i>Margin</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span onclick="tenMar()">50px</span>
+                            <span onclick="fifteenMar()">15px</span>
+                            <span onclick="twentyMar()">20px</span>
+                            <span onclick="thirtyMar()">30px</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-artboard-2-line"></i>Padding</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span onclick="tenPad()">10px</span>
+                            <span onclick="fifteenPad()">15px</span>
+                            <span onclick="twentyPad()">20px</span>
+                            <span onclick="thirtyPad()">30px</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-line-height"></i>Height</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span onclick="tenH()">50px</span>
+                            <span onclick="twentyH()">80px</span>
+                            <span onclick="thirtyH()">120px</span>
+                            <span onclick="fifteenH()">140px</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-aspect-ratio-line"></i>Width</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span onclick="tenW()">50px</span>
+                            <span onclick="twentyW()">100px</span>
+                            <span onclick="thirtyW()">120px</span>
+                            <span onclick="fifteenW()">140px</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-font-family"></i>Font Family</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span onclick="sans()">Verdana</span>
+                            <span onclick="gill()">Gill Sans</span>
+                            <span onclick="arial()">Arial</span>
+                            <span onclick="impact()">Impact</span>
+                        </div>
+                    </div>
+
+                    <div class="p-con-bar">
+                        <div class="p-con-color">
+                            <p><i class="ri-rounded-corner"></i>Border Radius</p>
+                        </div>
+
+                        <div class="content-container">
+                            <span onclick="border()">20px</span>
+                            <span onclick="borderPerc()">15%</span>
+                            <span onclick="borderRem()">2rem</span>
+                            <span onclick="borderEm()">3em</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="res-prop-color">
+                    <p>Made by Mo. Sarfraj Shaikh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bugs -->
+    <!-- 
+    Jab aap shape ke background me image add karte ho, to color change karne par sirf background image hi dikhegi.
+
+    Padding, height, border radius, margin, etc. sirf kuch conditions me hi kaam karenge; warna aisa lagega ki ye properly apply nahi hua hai.
+
+    For example, agar aap height ko max kar dete ho aur fir padding ya margin add karte ho, to ye click karne par kaam karega, lekin visually dikhega nahi. -->
+
+</body>
+
+</html>

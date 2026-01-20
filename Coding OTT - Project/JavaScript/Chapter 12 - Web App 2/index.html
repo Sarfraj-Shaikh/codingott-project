@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 12 – Part 2</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter: 12 - Web App 2
+    Date: 20-01-2026 | 6:15 AM - 7:55 AM
+    =====================================-->
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Task 1 -->
+        <div class="task-1-con">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdj3KTUdH3pT6Www7y5_BxMhn65WfA8OvdTg&s"
+                alt="Main Image" loading="lazy" id="main-img">
+
+            <div class="sub-img">
+                <img onclick="imgOne()"
+                src="https://imagescdn.homes.com/i2/UC7pdQIJnQKM4jtsY2-LluW-ayClvHZ8Nwn3ogo25-0/117/garden-city-ny.jpg?p=1"
+                alt="Image 1" loading="lazy" id="img-1">
+                <img onclick="imgTwo()"
+                src="https://www.un.org/sites/un2.un.org/files/styles/large-article-image-style-16-9/public/field/image/rose_garden_3.jpg"
+                alt="Image 2" loading="lazy" id="img-2">
+                <img onclick="imgThree()"
+                src="https://media.architecturaldigest.com/photos/5f47dc8d83fb14cf7e7bd044/16:9/w_2560%2Cc_limit/200625_EJ_belnord_courtyard-0048-Edit_HIGH_RES.jpg"
+                alt="Image 3" loading="lazy"id="img-3">
+                <img onclick="imgFour()"
+                src="https://lavocedinewyork.com/wp-content/uploads/2022/09/Grid_Street-Low_Density-1140x684.jpg"
+                alt="Image 4" loading="lazy"id="img-4">
+            </div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="task-2-con">
+            <div class="form-bg">
+                <div class="email">
+                    <i class="ri-mail-line"></i>
+                    <input id="emailId" type="email" placeholder="Enter Email ID" required>
+                </div>
+
+                 <div class="password">
+                    <i class="ri-lock-line"></i>
+                    <input id="pass" type="password" placeholder="Enter Your Password" required>
+                    <i onclick="show()"
+                    class="ri-eye-2-line" id="show" title="Show Password"></i>
+                    <i onclick="hide()"
+                    class="ri-eye-close-line" id="hide" title="Hide Password"></i>
+                </div>
+
+                <button class="btn">SIGN UP</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 12 – Part 3</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter: 12 - Web App 2
+    Date: 25-01-2026 | 2:09 PM - 4:17 PM
+    =====================================-->
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Task 1 -->
+        <div class="one-contain">
+
+            <img src="https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8MTYlM0E5fGVufDB8fDB8fHww"
+                id="img">
+
+            <div class="item-parent">
+                <div class="item">
+                    <div class="input-parent">
+                        <input type="number" value="500" placeholder="Enter Image Width" id="img-width" required>
+                        <span>PX</span>
+                    </div>
+                    <p onclick="width()">Change Width</p>
+                </div>
+
+                <div class="item">
+                    <div class="input-parent">
+                        <input type="number" value="350" placeholder="Enter Image Height" id="img-height" required>
+                        <span>PX</span>
+                    </div>
+                    <p onclick="height()">Change Height</p>
+                </div>
+
+                <div class="item">
+                    <p onclick="addBorder()">Add Border</p>
+                    <p onclick="removeBorder()">Remove Border</p>
+                </div>
+
+                <div class="item">
+                    <div class="input-parent">
+                        <input type="number" value="20" placeholder="Enter Border Radius" id="img-radius" required>
+                        <span>PX</span>
+                    </div>
+                    <p onclick="radius()">Add Border Radius</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="two-contain">
+            <h3>What is JavaScript?</h3>
+            <div class="option">
+                <p onclick="right()">Programming Language</p>
+                <p onclick="wrong()">English Language</p>
+            </div>
+            <textarea name="result" id="result"></textarea>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="thr-contain">
+            <textarea type="text" placeholder="Enter Your Text" id="input-txt" required></textarea>
+            <p onclick="show()">Show</p>
+            <span id="txt-res"></span>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

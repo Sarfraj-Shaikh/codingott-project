@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 12 – Extra Project</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter: 12 - Extra Project based on Previous 5 Project for Practice
+    Date: 25-01-2026 | 6:54 PM - 9:52 PM
+    =====================================-->
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Task 1 -->
+        <div class="one-con">
+            <p id="font-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis alias ratione, minus
+                veritatis quos quod
+                recusandae similique iure. Perspiciatis, quod nihil aliquid qui suscipit sunt.</p>
+
+            <div class="selection-con">
+
+                <div class="btns-con">
+                    <div class="font-con">
+                        <div class="input-con">
+                            <input type="number" value="25" placeholder="Enter Font Size" required id="font-size">
+                            <span>PX</span>
+                        </div>
+                        <div class="btn" onclick="fontSize()">Change Size</div>
+                    </div>
+                </div>
+
+                <div class="btns-con">
+                    <div class="font-con">
+                        <div class="input-con">
+                            <input type="text" value="#F4F8FA" placeholder="Enter Color Name or Hex Code" required
+                                id="font-clr">
+                        </div>
+                        <div class="btn" onclick="fontColor()">Change Color</div>
+                    </div>
+                </div>
+
+                <div class="btns-con">
+                    <div class="font-con">
+                        <div class="btn" onclick="addBold()">Add Bold</div>
+                        <div class="btn" onclick="removeBold()">Remove Bold</div>
+                    </div>
+                </div>
+
+                <div class="btns-con">
+                    <div class="font-con">
+                        <div class="btn" onclick="addItalic()">Add Italic</div>
+                        <div class="btn" onclick="removeItalic()">Remove Italic</div>
+                    </div>
+                </div>
+
+                <div class="btns-con">
+                    <div class="font-con">
+                        <div class="btn" onclick="addBoth()">Add Bold + Italic</div>
+                        <div class="btn" onclick="removeBoth()">Remove Bold + Italic</div>
+                    </div>
+                </div>
+
+                <div class="btns-con">
+                    <div class="font-con">
+                        <div class="btn" onclick="alignLeft()">Left Align</div>
+                        <div class="btn" onclick="alignCenter()">Center Align</div>
+                        <div class="btn" onclick="alignRight()">Right Align</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Task 2 -->
+        <div class="two-con" id="theme-bg">
+            <h3 id="heading-txt">Theme Switcher</h3>
+            <div class="btn-con">
+                <div class="btn" id="btn1" onclick="lightTheme()">Light Theme</div>
+                <div class="btn" id="btn2" onclick="darkTheme()">Dark Theme</div>
+                <div class="btn" id="btn3" onclick="blueTheme()">Blue Theme</div>
+            </div>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="thr-con">
+            <form>
+                <label for="password">
+                    <i class="ri-lock-fill"></i>
+                    <input type="text" placeholder="Enter Password" name="password" required onkeyup="passStrength()"
+                        id="pass-txt">
+                </label>
+                <p id="result"><b>Strength:</b> None</p>
+            </form>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="four-con">
+            <form>
+                <label for="message">
+                    <i class="ri-input-method-fill"></i>
+                    <input type="text" placeholder="Type Your Message" name="message" required onkeyup="livePreview()" id="msg-txt">
+                </label>
+
+                <div class="pre-box">
+                    <h3>Preview Box</h3>
+                    <p id="msg-result">Your Message Will Goes Here!</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 5 -->
+         <div class="five-con">
+
+            <form>
+
+                <div class="input-item">
+                    <i class="ri-user-fill"></i>
+                    <input type="text" placeholder="Enter Your Name" required id="f-name">
+                </div>
+
+                <div class="input-item">
+                    <i class="ri-mail-fill"></i>
+                    <input type="email" placeholder="Enter Your Email ID" required id="f-email">
+                </div>
+
+                <div class="input-item">
+                    <i class="ri-lock-password-fill"></i>
+                    <input type="password" placeholder="Enter Your Password" required id="f-pass">
+                </div>
+
+                <div class="input-item">
+                    <i class="ri-lock-password-fill"></i>
+                    <input type="text" placeholder="Confirm Your Password" required id="f-cpass">
+                </div>
+
+                <div class="err-box">
+                    <p id="error-msg">Error Message Will Goes Here!</p>
+                </div>
+
+                <button type="submit" id="submit-btn" onclick="formSubmit()">SUBMIT</button>
+
+            </form>
+
+         </div>
+
+    </div>
+
+</body>
+
+</html>

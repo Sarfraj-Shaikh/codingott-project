@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 12 – Part 5</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter: 12 - Web App 5
+    Date: 25-01-2026 | 5:51 PM - 6:40 PM
+    =====================================-->
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Task -->
+        <div class="two-contain">
+            <video src="" id="vid"></video>
+            <div class="buttons">
+                <input type="file" accept="video/*" id="my-vid" onchange="uploadVid()">
+                <button onclick="play()">Play</button>
+                <button onclick="stop()">Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+    BUG Description:
+    Jab hum koi file select karte hain, to JavaScript ki madad se innerHTML ka use karke file ka naam aur ek heading message (jaise “File Name: demo-file.png”) display karte hain.
+
+    Lekin agar ek baar file select karne ke baad dobara file select karne jaate hain aur is baar koi file choose nahi karte, to sirf heading show hoti hai, file ka naam display nahi hota. (Jaise “File Name: ”).
+
+    Is issue ko condition ka use karke fix kiya ja sakta hai, jisme empty path value ko remove ya handle kiya jaaye. Filhaal maine is approach ko detail me nahi padha hai, isliye abhi implement nahi kiya gaya hai.
+
+    Bilkul isi tarah ka behavior image previewer me bhi dekhne ko milta hai. File upload hone ke baad JavaScript ki madad se image ke src aur alt values update ki jaati hain, aur yahan bhi wahi issue (Bug) repeat hota hai jo upar mention kiya gaya hai.
+ 
+    -->
+</body>
+
+</html>

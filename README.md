@@ -53,7 +53,7 @@ Projects ko better UI aur design dene ke liye:
 - Icons, fonts, animations (as required)
 
 **⚠️ Note:** 
-Third-party code **sirf UI/UX improve karne ke liye** use kiya jata hai, core logic hud likha gaya hai.
+Third-party code **sirf UI/UX improve karne ke liye** use kiya jata hai, core logic khud likha gaya hai.
 
 ---
 

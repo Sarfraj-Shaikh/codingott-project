@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 16: Arithmetic Operations</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter: 16 - Arithmetic Operations
+    Date: 28-01-2026 | 1:020 AM - 2:02 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <!-- Task 1 
+     
+    Comment Types {
+        Comments mainly do types ke hote hain:
+        - Single-line comment
+        - Multi-line comment
+    
+    }
+
+    Agar humein kisi chhoti ya short baat ko explain karna ho, toh hum single-line comment ka use karte hain. Aur jab message ka content thoda bada ya detailed ho, tab multi-line comment ka use kiya jata hai.
+
+    Comments ka use information dene, kisi issue ko mention karne, ya program ko samajhne mein dusre developers ki madad karne ke liye kiya jata hai.
+
+    HTML mein comments likhne ke liye < !-- -- > ka use hota hai. Is syntax ka use hum single-line aur multi-line dono comments ke liye kar sakte hain.
+
+    CSS aur JavaScript mein multi-line comments ke liye /* */ ka use kiya jata hai. CSS mein yeh syntax single-line aur multi-line dono ke liye kaam karta hai.
+
+    JavaScript mein single-line comment ke liye // ka use hota hai.
+    
+    -->
+
+    <!-- Task 2 -->
+
+    <div class="card">
+        <h2>Arithmetic Operations</h2>
+
+        <!-- Addition -->
+        <div class="operation">
+            <h3>Addition (+)</h3>
+            <input type="number" id="add1" placeholder="Number 1">
+            <input type="number" id="add2" placeholder="Number 2">
+            <br>
+            <button onclick="calculateAdd()">Calculate</button>
+            <div class="result" id="resultAdd"></div>
+        </div>
+
+        <!-- Subtraction -->
+        <div class="operation">
+            <h3>Subtraction (-)</h3>
+            <input type="number" id="sub1" placeholder="Number 1">
+            <input type="number" id="sub2" placeholder="Number 2">
+            <br>
+            <button onclick="calculateSub()">Calculate</button>
+            <div class="result" id="resultSub"></div>
+        </div>
+
+        <!-- Multiplication -->
+        <div class="operation">
+            <h3>Multiplication (*)</h3>
+            <input type="number" id="mul1" placeholder="Number 1">
+            <input type="number" id="mul2" placeholder="Number 2">
+            <br>
+            <button onclick="calculateMul()">Calculate</button>
+            <div class="result" id="resultMul"></div>
+        </div>
+
+        <!-- Division -->
+        <div class="operation">
+            <h3>Division (/)</h3>
+            <input type="number" id="div1" placeholder="Number 1">
+            <input type="number" id="div2" placeholder="Number 2">
+            <br>
+            <button onclick="calculateDiv()">Calculate</button>
+            <div class="result" id="resultDiv"></div>
+        </div>
+
+        <!-- Modulus -->
+        <div class="operation">
+            <h3>Modulus (%)</h3>
+            <input type="number" id="mod1" placeholder="Number 1">
+            <input type="number" id="mod2" placeholder="Number 2">
+            <br>
+            <button onclick="calculateMod()">Calculate</button>
+            <div class="result" id="resultMod"></div>
+        </div>
+    </div>
+
+    <!-- 
+
+    Note: (BUG) {
+        No Bug
+    }
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

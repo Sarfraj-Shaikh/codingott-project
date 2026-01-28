@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 13 – Address Maker</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter: 13: Address Maker
+    Date: 28-01-2026 | 10:33 AM - 12:54 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="container1" id="container1">
+        <!-- Task 1 -->
+        <form id="nameForm" onsubmit="return showName()">
+            <h2>Name Form</h2>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <button type="submit">Show</button>
+            <p id="nameResult"></p>
+        </form>
+    </div>
+
+    <div class="container2">
+        <!-- Task 2 -->
+        <form id="addressForm" onsubmit="return addMaker()">
+            <h2>Address Maker</h2>
+            <input type="text" id="fullName" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <input type="text" id="spouse" placeholder="Spouse Name" required>
+
+            <select id="relationSelect" required>
+                <option value="">Relation Type</option>
+                <option value="S/o">Son</option>
+                <option value="W/o">Wife</option>
+                <option value="C/o">Care</option>
+            </select>
+
+            <input type="text" id="state" placeholder="State" required>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="country" placeholder="Country" required>
+            <input type="text" id="pinCode" pattern="[0-9]{6}" maxlength="6" placeholder="Pin Code" required>
+
+            <textarea id="address" placeholder="Address line" required></textarea>
+            <button type="submit">Save</button>
+        </form>
+
+        <!-- Text Box with Customization -->
+        <div class="text-box">
+            <div class="customize-controls" id="customize-controls">
+
+                <button onclick="bold()" id="boldBg"><i class="ri-bold"></i></button>
+                <button onclick="italic()" id="italicBg"><i class="ri-italic"></i></button>
+                <button onclick="underline()" id="underlineBg"><i class="ri-underline"></i></button>
+                <button onclick="reset()"><i class="ri-reset-right-line"></i></button>
+
+                <select id="alignSelect" onchange="txtAlign()">
+                    <option value="">Text Align</option>
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                </select>
+
+                <select id="colorSelect" onchange="txtColor()">
+                    <option value="">Text Color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+
+            <p id="customText">Address result will be goes here...</p>
+
+            <!-- Print Buttons -->
+            <div style="margin-top: 20px;" class="print-con" id="print-con">
+                <button onclick="printFull()">Print Full Page</button>
+                <button onclick="printAddress()">Print Address</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+
+    Note: (BUG) {
+    Jab bhi sirf address box print karne ke liye Print button par click kiya jata hai, tab ek function call hota hai jo baaki sabhi elements ko hide kar deta hai.
+
+    Lekin agar print karne ke bajaye Cancel kar diya jaye, to us case mein sirf address box hi visible reh jata hai aur baaki sabhi elements hidden ho jaate hain.
+    }
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

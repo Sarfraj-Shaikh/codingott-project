@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 17: Image Effects</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 17: Image Effects
+    Date: 28-01-2026 | 2:20 PM - 2:54 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <!-- Task -->
+    <div class="card">
+        <h1>Image Effects Controller</h1>
+
+        <img id="image" src="https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80" alt="Sample Image">
+
+        <!-- Brightness -->
+        <div class="slider-container">
+            <label for="brightness">Brightness</label>
+            <input type="range" id="brightness" min="50" max="150" value="100" oninput="bright()">
+            <div class="value-display" id="brightnessValue">100%</div>
+        </div>
+
+        <!-- Contrast -->
+        <div class="slider-container">
+            <label for="contrast">Contrast</label>
+            <input type="range" id="contrast" min="50" max="150" value="100" oninput="contra()">
+            <div class="value-display" id="contrastValue">100%</div>
+        </div>
+
+        <!-- Saturation -->
+        <div class="slider-container">
+            <label for="saturation">Saturation</label>
+            <input type="range" id="saturation" min="0" max="200" value="100" oninput="satur()">
+            <div class="value-display" id="saturationValue">100%</div>
+        </div>
+    </div>
+
+    <!-- 
+
+    Note: (BUG) {
+        No Bug
+    }
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

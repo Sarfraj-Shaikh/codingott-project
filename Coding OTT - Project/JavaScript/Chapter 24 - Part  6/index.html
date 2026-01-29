@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 24: Part 6</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 24: Part 6
+    Date: 29-01-2026 | 3:10 PM - 3:34 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <!-- Task -->
+    <div class="card">
+        <form>
+
+            <div class="field">
+                <input class="" type="text" id="firstName" placeholder="First Name"     onclick="firstNameVal()" onblur="firstNameVal(); uNameVal()" oninput="firstNameVal(); uNameVal()">
+                <i class="ri-check-line" id="tick"></i>
+                <p class="error-text" id="error-text"></p>
+            </div>
+
+            <div class="field">
+                <input type="text" id="lastName" placeholder="Last Name" onclick="firstNameVal(); lastNameVal()"
+                    onblur="lastNameVal(); uNameVal()" oninput="lastNameVal(); uNameVal()">
+                <i class="ri-check-line" id="tick2"></i>
+                <p class="error-text" id="error-text2"></p>
+            </div>
+
+            <div class="field">
+                <input type="email" placeholder="Email" onclick="firstNameVal(); lastNameVal()" onblur="" oninput="">
+                <i class="ri-mail-line" id="emailIcon"></i>
+                <i class="ri-check-line" id="tick3"></i>
+                <p class="error-text" id="error-text3"></p>
+            </div>
+
+            <div class="field">
+                <input type="tel" id="mobileNumber" placeholder="Mobile Number" onclick="firstNameVal(); lastNameVal(); mobileNumVal()"
+                    onblur="mobileNumVal()" oninput="mobileNumVal()">
+                <i class="ri-check-line" id="tick4"></i>
+                <p class="error-text" id="error-text4"></p>
+            </div>
+
+            <div class="field">
+                <input style="cursor: not-allowed;" type="text" disabled="disabled" id="userName" placeholder="Username"
+                    onclick="firstNameVal(); lastNameVal(); mobileNumVal()" onblur="" oninput="">
+                <i class="ri-check-line" id="tick5"></i>
+                <p class="error-text" id="error-text5"></p>
+            </div>
+
+            <div class="field">
+                <input type="password" id="password" placeholder="Password" onclick="firstNameVal(); lastNameVal(); mobileNumVal(); passVal()" onblur="passVal()" oninput="passVal()">
+                <i class="ri-check-line" id="tick6"></i>
+                <p class="error-text" id="error-text6"></p>
+            </div>
+
+            <div class="field">
+                <input type="password" id="conPassword" placeholder="Confirm Password"
+                    onclick="firstNameVal(); lastNameVal(); mobileNumVal(); passVal(); conPassVal()" onblur="conPassVal()" oninput="conPassVal()">
+                <i class="ri-check-line" id="tick7"></i>
+                <p class="error-text" id="error-text7"></p>
+            </div>
+
+            <button disabled="disabled" id="subBtn">Submit</button>
+        </form>
+    </div>
+
+
+
+    <!-- 
+
+    Note: (BUG) {
+    }
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

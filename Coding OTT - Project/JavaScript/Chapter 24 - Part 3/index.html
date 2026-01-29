@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 24: Part 3</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 24: Part 3
+    Date: 29-01-2026 | 12:50 PM - 1:45 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <!-- Task -->
+    <div class="card">
+        <form>
+
+            <div class="field">
+                <input class="" type="text" id="firstName" placeholder="First Name" onblur="firstNameVal()" oninput="firstNameVal()">
+                <i class="ri-check-line" id="tick"></i>
+                <p class="error-text" id="error-text">First Name is required</p>
+            </div>
+
+            <div class="field">
+                <input type="text" id="lastName" placeholder="Last Name" onclick="firstNameVal()" onblur="lastNameVal()" oninput="lastNameVal()">
+                <i class="ri-check-line" id="tick2"></i>
+                <p class="error-text" id="error-text2">Please fill First Name first</p>
+            </div>
+
+            <div class="field">
+                <input type="email" placeholder="Email" onclick="firstNameVal(); lastNameVal()" onblur="" oninput="">
+                <i class="ri-check-line" id="tick3"></i>
+                <p class="error-text" id="error-text3">Please fill First Name first</p>
+            </div>
+
+            <div class="field">
+                <input type="tel" id="mobileNumber" placeholder="Mobile Number" onclick="firstNameVal(); lastNameVal()" onblur="mobileNumVal()" oninput="mobileNumVal()">
+                <i class="ri-check-line" id="tick4"></i>
+                <p class="error-text" id="error-text4">Please fill First Name first</p>
+            </div>
+
+            <div class="field">
+                <input type="text" placeholder="Username" onclick="firstNameVal(); lastNameVal(); mobileNumVal()" onblur="" oninput="">
+                <i class="ri-check-line" id="tick5"></i>
+                <p class="error-text" id="error-text5">Please fill First Name first</p>
+            </div>
+
+            <div class="field">
+                <input type="password" placeholder="Password" onclick="firstNameVal(); lastNameVal(); mobileNumVal()" onblur="" oninput="">
+                <i class="ri-check-line" id="tick6"></i>
+                <p class="error-text" id="error-text6">Please fill First Name first</p>
+            </div>
+
+            <div class="field">
+                <input type="password" placeholder="Confirm Password" onclick="firstNameVal(); lastNameVal(); mobileNumVal()" onblur="" oninput="">
+                <i class="ri-check-line" id="tick7"></i>
+                <p class="error-text" id="error-text7">Please fill First Name first</p>
+            </div>
+
+            <button disabled>Submit</button>
+        </form>
+    </div>
+
+
+
+    <!-- 
+
+    Note: (BUG) {
+    }
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

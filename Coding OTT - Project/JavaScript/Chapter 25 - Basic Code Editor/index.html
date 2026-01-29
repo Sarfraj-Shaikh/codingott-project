@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 25: Basic Code Editor</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 25: Basic Code Editor
+    Date: 29-01-2026 | 5:05 PM - 5:54 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <!-- Task -->
+
+    <div class="container">
+        <h1>BASIC CODE EDITOR <small>(Version 1.0)</small></h1>
+
+        <div class="card">
+            <div class="card-2">
+                <fieldset>
+                    <legend>HTML Code Input</legend>
+                    <textarea id="codeArea">
+                        <!DOCTYPE html>
+                        <html>
+                            <head>
+                                <style>
+                                    .heading {
+                                        color: blue;
+                                        font-size: 24px;
+                                        text-align: center;
+                                        margin: 10px;
+                                    }
+
+                                    .paragrapgh {
+                                        color: #4b4b4b;
+                                        font-size: 16px;
+                                        text-align: center;
+                                        margin: 10px;
+                                    }
+
+                                    .developer {
+                                        color: #000000;
+                                        font-weight: bold;
+                                    }
+                                </style>
+
+                            </head>
+                        <body>
+                            <h2 class="heading">Basic Code Editor</h2>
+                            <p class="paragrapgh">Design and Developed by <span class="developer">Mo. Sarfraj Shaikh!</span></p>
+                        </body>
+                        </html>
+                    </textarea>
+                </fieldset>
+            </div>
+
+            <div class="card-2">
+                <fieldset>
+                    <legend>Output</legend>
+                    <div class="outputFrame" id="outputFrame"></div>
+                </fieldset>
+            </div>
+        </div>
+        <button onclick="generateOutput()">Run Code</button>
+    </div>
+
+    <!-- 
+
+    Note: (BUG) {
+    }
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

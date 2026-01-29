@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* HEADER */
+.container h1 {
+    width: 100%;
+    background-color: crimson;
+    color: #ffffff;
+    padding: clamp(16px, 4vw, 30px);
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+h1 small {
+    display: block;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* MAIN CARD LAYOUT */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+}
+
+/* INPUT + OUTPUT BLOCK */
+.card-2 {
+    flex: 1 1 480px;
+    max-width: 100%;
+}
+
+/* FIELDSET */
+fieldset {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+}
+
+legend {
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    text-align: left;
+    min-height: 40vh;
+    max-height: 70vh;
+    resize: vertical;
+    padding: 15px;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    outline: none;
+}
+
+textarea:focus {
+    border: 2px solid #000;
+}
+
+button {
+    align-self: center;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(99, 102, 241, 0.4);
+}
+
+/* OUTPUT */
+.outputFrame {
+    width: 100%;
+    min-height: 40vh;
+    max-height: 70vh;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    background: white;
+    padding: 10px;
+}

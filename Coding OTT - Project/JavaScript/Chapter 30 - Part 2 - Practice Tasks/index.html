@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 30 - Part 2 (Practice Tasks)</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 30 - Part 2 (Practice Tasks)
+    Date: 30-03-2026 | 3:16 PM - 4:06 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Chapter 30 - Part 2 (Practice Tasks)</h1>
+        <p class="subtitle">All Projects in One Page</p>
+
+        <!-- Task 1 -->
+        <div class="card">
+            <h2>Task 1: Positive / Negative Checker</h2>
+            <input type="number" id="pnInput" placeholder="Enter number">
+            <button onclick="checkPositiveNegative()">Check</button>
+            <p id="pnResult" class="msg"></p>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="card">
+            <h2>Task 2: Voting Eligibility Checker</h2>
+            <input type="number" id="ageInput" placeholder="Enter age">
+            <button onclick="checkVoting()">Check</button>
+            <p id="voteResult" class="msg"></p>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="card">
+            <h2>Task 3: Password Strength Checker</h2>
+            <input type="password" id="passInput" placeholder="Enter password">
+            <button onclick="checkPassword()">Check</button>
+            <p id="passResult" class="msg"></p>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="card">
+            <h2>Task 4: Grade Checker</h2>
+            <input type="number" id="marksInput" placeholder="Enter marks">
+            <button onclick="checkGrade()">Check</button>
+            <p id="gradeResult" class="msg"></p>
+        </div>
+
+        <!-- Task 5 -->
+        <div class="card">
+            <h2>Task 5: Simple Calculator</h2>
+            <input type="number" id="num1" placeholder="Enter number 1">
+            <input type="number" id="num2" placeholder="Enter number 2">
+
+            <div class="btn-group">
+                <button onclick="calculator('add')">Add</button>
+                <button onclick="calculator('sub')">Subtract</button>
+            </div>
+
+            <p id="calcResult" class="msg"></p>
+        </div>
+
+        <!-- Task 6 -->
+        <div class="card">
+            <h2>Task 6: Dummy Login Checker</h2>
+            <input type="text" id="userInput" placeholder="Enter username">
+            <input type="password" id="loginPassInput" placeholder="Enter password">
+            <button onclick="checkLogin()">Login</button>
+            <p id="loginResult" class="msg"></p>
+        </div>
+
+        <!-- Task 7 -->
+        <div class="card">
+            <h2>Task 7: Discount Checker</h2>
+            <input type="number" id="billInput" placeholder="Enter bill amount">
+            <button onclick="checkDiscount()">Check</button>
+            <p id="discountResult" class="msg"></p>
+        </div>
+
+        <!-- Task 8 -->
+        <div class="card">
+            <h2>Task 8: Temperature Checker</h2>
+            <input type="number" id="tempInput" placeholder="Enter temperature">
+            <button onclick="checkTemperature()">Check</button>
+            <p id="tempResult" class="msg"></p>
+        </div>
+
+        <!-- Task 9 -->
+        <div class="card">
+            <h2>Task 9: Even/Odd + Positive/Negative</h2>
+            <input type="number" id="comboInput" placeholder="Enter number">
+            <button onclick="checkCombo()">Check</button>
+            <p id="comboResult" class="msg"></p>
+        </div>
+
+        <!-- Task 10 -->
+        <div class="card">
+            <h2>Task 10: Number Guess Game</h2>
+            <input type="number" id="guessInput" placeholder="Guess number (1-10)">
+            <button onclick="guessGame()">Guess</button>
+            <p id="guessResult" class="msg"></p>
+        </div>
+
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

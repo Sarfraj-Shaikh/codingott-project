@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 32 - Array Practice Tasks</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 32 - Array Practice Tasks
+    Date: 31-03-2026 | 5:08 PM - 6:42 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>JavaScript Array Practice Tasks</h1>
+        <p class="subtitle">
+            Output boxes me JS se "Before Array", "Method Used", "After Array" aur "Final Result" show karo.
+        </p>
+
+        <!-- TASK 1 -->
+        <div class="task-card">
+            <h2>Task 1: Shopping List Manager</h2>
+
+            <div class="output">
+                <p><span>Before Array:</span> <span id="t1Before">[]</span></p>
+                <p><span>Method Used:</span> <span id="t1Method">---</span></p>
+                <p><span>After Array:</span> <span id="t1After">[]</span></p>
+                <p class="final"><span>Final Result:</span> <span id="t1Final">---</span></p>
+            </div>
+
+            <div class="btn-group">
+                <button id="t1BtnPush" onclick="addRice()">Add (Rice)</button>
+                <button id="t1BtnPop" onclick="usePop()">Delete Last Item</button>
+                <button id="t1BtnUnshift" onclick="addTea()">Add (Tea)</button>
+                <button id="t1BtnShift" onclick="useShift()">Delete First Item</button>
+                <button id="t1BtnSplice" onclick="useSplice()">Delete Bread</button>
+                <button id="t1BtnJoin" onclick="useJoin()">Add (" | ") Between List</button>
+            </div>
+        </div>
+
+        <!-- TASK 2 -->
+        <div class="task-card">
+            <h2>Task 2: Class Attendance List</h2>
+
+            <div class="output">
+                <p><span>Before Array:</span> <span id="t2Before">[]</span></p>
+                <p><span>Method Used:</span> <span id="t2Method">---</span></p>
+                <p><span>After Array:</span> <span id="t2After">[]</span></p>
+                <p class="final"><span>Final Result:</span> <span id="t2Final">---</span></p>
+            </div>
+
+            <div class="btn-group">
+                <button id="t2BtnPush" onclick="addSahil()">Add ("Sahil")</button>
+                <button id="t2BtnUnshift" onclick="addPrincipal()">Add ("Principal")</button>
+                <button id="t2BtnShift" onclick="deleteT2FirstItem()">Delete First Item</button>
+                <button id="t2BtnPop" onclick="deleteT2LastItem()">Delete Last Item</button>
+                <button id="t2BtnSplice" onclick="deleteT2Item()">Delete</button>
+                <button id="t2BtnJoin" onclick="addT2Space()">Add Space</button>
+            </div>
+        </div>
+
+        <!-- TASK 3 -->
+        <div class="task-card">
+            <h2>Task 3: Train Coach Game</h2>
+
+            <div class="output">
+                <p><span>Before Array:</span> <span id="t3Before">[]</span></p>
+                <p><span>Method Used:</span> <span id="t3Method">---</span></p>
+                <p><span>After Array:</span> <span id="t3After">[]</span></p>
+                <p class="final"><span>Final Result:</span> <span id="t3Final">---</span></p>
+            </div>
+
+            <div class="btn-group">
+                <button id="t3BtnPush" onclick="addE1()">Add ("E1")</button>
+                <button id="t3BtnUnshift" onclick="addVip()">Add ("VIP")</button>
+                <button id="t3BtnPop" onclick="deleteT3LastItem()">Delete Last Item</button>
+                <button id="t3BtnShift" onclick="deleteT3FirstItem()">Delete First Item</button>
+                <button id="t3BtnSplice" onclick="spliceT3Item()">Delete</button>
+                <button id="t3BtnJoin" onclick="joinT3Item()">Join (" - ")</button>
+            </div>
+        </div>
+
+        <!-- TASK 4 -->
+        <div class="task-card">
+            <h2>Task 4: Contact List Manager</h2>
+
+            <div class="output">
+                <p><span>Before Array:</span> <span id="t4Before">[]</span></p>
+                <p><span>Method Used:</span> <span id="t4Method">---</span></p>
+                <p><span>After Array:</span> <span id="t4After">[]</span></p>
+                <p class="final"><span>Final Result:</span> <span id="t4Final">---</span></p>
+            </div>
+
+            <div class="btn-group">
+                <button id="t4BtnPush" onclick="addT4Sahil()">Add ("Sahil")</button>
+                <button id="t4BtnUnshift" onclick="addT4Emergency()">Add ("Emergency") First</button>
+                <button id="t4BtnSort" onclick="sortT4Item()">Short Name</button>
+                <button id="t4BtnSlice" onclick="slicetT4Item()">Slice (0,3)</button>
+                <button id="t4BtnConcat" onclick="concatT4Item()">Concat()</button>
+                <button id="t4BtnJoin" onclick="joinT4Item()">Join(" , ")</button>
+            </div>
+
+            <div class="extra-output">
+                <p><span>Top 3 Contacts:</span> <span id="t4Top3">---</span></p>
+            </div>
+        </div>
+
+        <!-- TASK 5 -->
+        <div class="task-card">
+            <h2>Task 5: Number Lab (Sorting + Slicing)</h2>
+
+            <div class="output">
+                <p><span>Before Array:</span> <span id="t5Before">[]</span></p>
+                <p><span>Method Used:</span> <span id="t5Method">---</span></p>
+                <p><span>After Array:</span> <span id="t5After">[]</span></p>
+                <p class="final"><span>Final Result:</span> <span id="t5Final">---</span></p>
+            </div>
+
+            <div class="btn-group">
+                <button id="t5BtnSort" onclick="return sortT5Item()">Ascending Order</button>
+                <button id="t5BtnReverse" onclick="return revT5Item()">Descending Order</button>
+                <button id="t5BtnTop3" onclick="topSliceT5Item()">Format (0,3)</button>
+                <button id="t5BtnLow3" onclick="lowSliceT5Item()">Format (-3)</button>
+                <button id="t5BtnConcat" onclick="newT5Item()">Add New List ([100,200,300])</button>
+                <button id="t5BtnJoin" onclick="joinT5Item()">Join (" | ")</button>
+            </div>
+
+            <div class="extra-output">
+                <p><span>Top 3 Biggest:</span> <span id="t5Top3">---</span></p>
+                <p><span>Lowest 3:</span> <span id="t5Low3">---</span></p>
+            </div>
+        </div>
+
+        <!-- EXTRA CHALLENGE -->
+        <div class="task-card">
+            <h2>Extra Challenge</h2>
+
+            <div class="output">
+                <p><span>Before Array:</span> <span id="exBefore">[]</span></p>
+                <p><span>Method Used:</span> <span id="exMethod">---</span></p>
+                <p><span>After Array:</span> <span id="exAfter">[]</span></p>
+                <p class="final"><span>Final Result:</span> <span id="exFinal">---</span></p>
+            </div>
+
+            <div class="btn-group">
+                <button id="exBtnRemoveC" onclick="removeExItem()">Splice (remove C)</button>
+                <button id="exBtnInsertX" onclick="addExItem()">Splice (insert X)</button>
+                <button id="exBtnSlice" onclick="sliceExItem()">Slice (B to D)</button>
+                <button id="exBtnJoin" onclick="joinExItem()">Join (" - ")</button>
+            </div>
+
+            <div class="extra-output">
+                <p><span>Sliced Output:</span> <span id="exSliceResult">---</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

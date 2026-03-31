@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 32 - Part 5</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 32 - Part 5
+    Date: 31-03-2026 | 4:27 PM - 5:03 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Sort 10 Numbers</h1>
+        <p class="info">Enter 10 values and press each button to store the number.</p>
+
+        <div class="grid">
+            <div class="field">
+                <input type="text" placeholder="Enter Number 1" required id="text1">
+                <button id="btn1" onclick="addNumOne()">Add 1</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 2" required id="text2">
+                <button id="btn2" onclick="addNumTwo()">Add 2</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 3" required id="text3">
+                <button id="btn3" onclick="addNumThree()">Add 3</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 4" required id="text4">
+                <button id="btn4" onclick="addNumFour()">Add 4</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 5" required id="text5">
+                <button id="btn5" onclick="addNumFive()">Add 5</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 6" required id="text6">
+                <button id="btn6" onclick="addNumSix()">Add 6</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 7" required id="text7">
+                <button id="btn7" onclick="addNumSeven()">Add 7</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 8" required id="text8">
+                <button id="btn8" onclick="addNumEight()">Add 8</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 9" required id="text9">
+                <button id="btn9" onclick="addNumNine()">Add 9</button>
+            </div>
+            
+            <div class="field">
+                <input type="text" placeholder="Enter Number 10" required id="text10">
+                <button id="btn10" onclick="addNumTen()">Add 10</button>
+            </div>
+        </div>
+        
+        <div class="output-box">
+            <h2>Sorted Output</h2>
+
+            <div class="result">
+                <h3>Numbers</h3>
+                <p class="output" id="arrayNums">Waiting for input...</p>
+            </div>
+
+            <div class="result">
+                <h3>Ascending Order</h3>
+                <p class="output" id="ascendingResult">Waiting for input...</p>
+            </div>
+
+            <div class="result">
+                <h3>Descending Order</h3>
+                <p class="output" id="descendingResult">Waiting for input...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

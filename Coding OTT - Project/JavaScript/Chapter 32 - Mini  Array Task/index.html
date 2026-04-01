@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 32 - Array Based Mini Projects (Tasks)</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 32 - Array Based Mini Projects (Tasks)
+    Date: 1-04-2026 | 12:24 PM - 1:43 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="logo">JavaScript Array Mini Projects</div>
+            <nav>
+                <a href="#p1">Grocery</a>
+                <a href="#p2">Attendance</a>
+                <a href="#p3">Train</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Made by Sarfraj Shaikh</h1>
+            <p>
+                Executed array methods step-by-step.
+                Fully responsive, smmoth experience, clean professional UI.
+            </p>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- Project 1 -->
+        <section id="p1">
+            <div class="section-title">
+                <div>
+                    <h2>🥇 Grocery / Inventory Manager</h2>
+                    <p>Run step-by-step grocery inventory operations.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="output-area" id="output1">
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle1">Step 1</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add "Rice"</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before1"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method1"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After1"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle2">Step 2</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Remove Last Item</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before2"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method2"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After2"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle3">Step 3</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add "Tea" First</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before3"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method3"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After3"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle4">Step 4</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Remove First Item</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before4"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method4"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After4"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle5">Step 5</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Delete "Bread"</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before5"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method5"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After5"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle6">Step 6</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add New "Oil", "Salt" List</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before6"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method6"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After6"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle7">Step 7</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add Both List</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before7"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method7"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After7"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p1StepTitle8">Step 8</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add " | " Instead Of " , "</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p1Before8"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p1Method8"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p1After8"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2 -->
+        <section id="p2">
+            <div class="section-title">
+                <div>
+                    <h2>🥈 Student Attendance Dashboard</h2>
+                    <p>Executed attendance operations step-by-step.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="output-area" id="output2">
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle1">Step 1</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add "Sahil"</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before1"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method1"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After1"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle2">Step 2</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add "Principal" First</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before2"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method2"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After2"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle3">Step 3</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Remove First Item</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before3"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method3"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After3"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle4">Step 4</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Delete First Item</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before4"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method4"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After4"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle5">Step 5</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Delete Last Item</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before5"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method5"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After5"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle6">Step 6</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Delete Item at Index [ 1 ]</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before6"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method6"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After6"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle7">Step 7</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Arrange In Alphabetical Order</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before7"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method7"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After7"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle8">Step 8</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Extract Top 3 Students</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before8"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method8"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After8"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle9">Step 9</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Create "Karan", "Zoya" New List</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before9"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method9"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After9"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle10">Step 10</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Merge Both List</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before10"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method10"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After10"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p2StepTitle11">Step 11</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add Space After Comma</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p2Before11"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p2Method11"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p2After11"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3 -->
+        <section id="p3">
+            <div class="section-title">
+                <div>
+                    <h2>🥉 Train Coach Booking System</h2>
+                    <p>Run coach booking system operations interactively.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="output-area" id="output3">
+
+                    <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle1">Step 1</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add "Sahil"</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before1"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method1"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After1"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle2">Step 2</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add "VIP" First</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before2"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method2"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After2"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle3">Step 3</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Delete Last Item</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before3"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method3"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After3"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle4">Step 4</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Delete First Item</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before4"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method4"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After4"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle5">Step 5</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Remove Item From Index 1 To 1</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before5"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method5"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After5"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle6">Step 6</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add "X1" at Index 2</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before6"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method6"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After6"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle7">Step 7</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Extract From Index 1 To 3</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before7"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method7"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After7"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle8">Step 8</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add ["F1", "G1"] New List</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before8"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method8"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After8"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle9">Step 9</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Merge Both List</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before9"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method9"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After9"></span>
+                        </div>
+
+                    </div>
+
+                     <div class="step-card">
+
+                        <div class="step-title" id="p3StepTitle10">Step 10</div>
+
+                        <div class="step-line"><span class="label">Task: </span>
+                            <span class="code">Add " - " Instead Of Comma</span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Before Array:</span>
+                            <span class="code" id="p3Before10"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">Method Used:</span>
+                            <span class="code" id="p3Method10"></span>
+                        </div>
+
+                        <div class="step-line"><span class="label">After Array:</span>
+                            <span class="code" id="p3After10"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        2026 Array Practice Project | Sarfraj Shaikh
+    </footer>
+
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

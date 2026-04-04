@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter (1 - 34) - Project 2</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter (1 - 34) - Project 2 (Student Marks Calculator + Result Generator)
+    Date: 4-04-2026 | 3:29 PM - 4:31 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="app">
+        <header class="app-header">
+            <div class="brand">
+                <div class="logo">🎓</div>
+                <div class="brand-text">
+                    <h1>Student Marks Calculator</h1>
+                    <p>Total, Percentage, Grade & Result Generator</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Enter Student Marks</h2>
+                    <p>Fill marks out of 100 for each subject.</p>
+                </div>
+
+                <form class="marks-form" id="marksForm">
+                    <div class="grid">
+                        <div class="field">
+                            <label for="math">Math</label>
+                            <input type="number" id="math" placeholder="0 - 100" min="0" max="100" />
+                            <small class="hint" id="hint1">Enter marks between 0 and 100</small>
+                        </div>
+
+                        <div class="field">
+                            <label for="english">English</label>
+                            <input type="number" id="english" placeholder="0 - 100" min="0" max="100" />
+                            <small class="hint" id="hint2">Enter marks between 0 and 100</small>
+                        </div>
+
+                        <div class="field">
+                            <label for="science">Science</label>
+                            <input type="number" id="science" placeholder="0 - 100" min="0" max="100" />
+                            <small class="hint" id="hint3">Enter marks between 0 and 100</small>
+                        </div>
+
+                        <div class="field">
+                            <label for="computer">Computer</label>
+                            <input type="number" id="computer" placeholder="0 - 100" min="0" max="100" />
+                            <small class="hint" id="hint4">Enter marks between 0 and 100</small>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn btn-primary" id="calculateBtn" onclick="return calculateMark()">
+                            Calculate Result
+                        </button>
+
+                        <button class="btn btn-secondary" id="resetBtn" onclick="return resetMark()">
+                            Reset
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="card result-card" id="resultCard">
+                <div class="card-header">
+                    <h2>Result Summary</h2>
+                    <p>Your calculated marks & performance report.</p>
+                </div>
+
+                <div class="result-grid">
+                    <div class="result-box">
+                        <span class="result-title">Total Marks</span>
+                        <span class="result-value" id="totalMarks">--</span>
+                        <span class="result-sub">Out of 400</span>
+                    </div>
+
+                    <div class="result-box">
+                        <span class="result-title">Percentage</span>
+                        <span class="result-value" id="percentage">--</span>
+                        <span class="result-sub">%</span>
+                    </div>
+
+                    <div class="result-box">
+                        <span class="result-title">Grade</span>
+                        <span class="result-value grade" id="grade">--</span>
+                        <span class="result-sub">Performance</span>
+                    </div>
+
+                    <div class="result-box">
+                        <span class="result-title">Result</span>
+                        <span class="result-value status" id="status">--</span>
+                        <span class="result-sub">Pass / Fail</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="details">
+                    <div class="detail-row">
+                        <span>Math</span>
+                        <span id="mathOut">--</span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>English</span>
+                        <span id="englishOut">--</span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>Science</span>
+                        <span id="scienceOut">--</span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>Computer</span>
+                        <span id="computerOut">--</span>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <p>
+                        <strong>Rule:</strong> Minimum 33 marks per subject required to pass.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Student Result System • Built by Sarfraj Shaikh</p>
+        </footer>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

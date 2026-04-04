@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter (1 - 34) - Project 3</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter (1 - 34) - Project 3 (Expense Tracker)
+    Date: 4-04-2026 | 4:36 PM - 7:02 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="app">
+        <header class="app-header">
+            <div class="brand">
+                <div class="logo">💰</div>
+                <div class="brand-text">
+                    <h1>Expense Tracker</h1>
+                    <p>Add, delete, track total, highest expense & balance</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Input Section -->
+            <section class="card">
+                <div class="card-header">
+                    <h2>Manage Balance</h2>
+                    <p>Enter income to track your expense.</p>
+                </div>
+
+                <div class="form-grid bal">
+                    <div class="field">
+                        <label for="incomeAmount">Total Income</label>
+                        <input type="number" id="incomeAmount" placeholder="e.g. 5000" min="0" />
+                    </div>
+                </div>
+
+                <div class="actions bal">
+                    <button class="btn btn-primary" id="addBalanceBtn" type="button" onclick="addBalance()">
+                        Add Balance
+                    </button>
+
+                    <button class="btn btn-secondary" id="clearAllBalanceBtn" type="button" onclick="clearUserBal()">
+                        Clear All Balance
+                    </button>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card-header">
+                    <h2>Add New Expense</h2>
+                    <p>Enter expense title and amount.</p>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="expenseTitle">Expense Title</label>
+                        <input type="text" id="expenseTitle" placeholder="e.g. Pizza" />
+                    </div>
+
+                    <div class="field">
+                        <label for="expenseAmount">Amount (₹)</label>
+                        <input type="number" id="expenseAmount" placeholder="e.g. 200" min="0" />
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn-primary" id="addExpenseBtn" type="button" onclick="addExpense()">
+                        Add Expense
+                    </button>
+
+                    <button class="btn btn-secondary" id="clearAllBtn" type="button" onclick="clearExpense()">
+                        Clear All Expenses
+                    </button>
+                </div>
+            </section>
+
+            <!-- Summary Section -->
+            <section class="card">
+                <div class="card-header">
+                    <h2>Summary</h2>
+                    <p>Total expense, highest expense & balance.</p>
+                </div>
+
+                <div class="summary-grid">
+
+                    <div class="summary-box">
+                        <span class="summary-title">Expense Items</span>
+                        <span class="summary-value" id="totalExpenseItem">0</span>
+                    </div>
+
+                    <div class="summary-box">
+                        <span class="summary-title">Total Expense</span>
+                        <span class="summary-value" id="totalExpense">₹0</span>
+                    </div>
+
+                    <div class="summary-box">
+                        <span class="summary-title">Highest Expense</span>
+                        <span class="summary-value" id="highestExpense">₹0</span>
+                    </div>
+
+                    <div class="summary-box">
+                        <span class="summary-title">Balance</span>
+                        <span class="summary-value" id="balance">₹0</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Expense List Section -->
+            <section class="card">
+                <div class="card-header">
+                    <h2>Expense List</h2>
+                    <p>All expenses will appear here.</p>
+                </div>
+
+               <div class="list" id="expenseListBg"></div>
+
+                <div class="empty" id="emptyMsg">
+                    <p>No expenses added yet.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Expense Tracker • Made by Sarfraj Shaikh</p>
+        </footer>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

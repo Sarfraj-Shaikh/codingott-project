@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter (1 - 34) - Project 4</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter (1 - 34) - Project 4 (Quiz App)
+    Date: 5-04-2026 | 11:44 AM - 12:39 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- QUIZ SCREEN -->
+        <div class="quiz-screen" id="quizScreen">
+
+            <div class="quiz-header">
+                <h2>🔥 Quiz App (MCQ System)</h2>
+                <div class="score-box">
+                    Score: <span id="score">0</span>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <h1 id="questionText">Question will appear here...</h1>
+            </div>
+
+            <div class="options" id="optionsBox">
+                <button class="option-btn" id="optionsBtn1">A) Option 1</button>
+                <button class="option-btn" id="optionsBtn2">B) Option 2</button>
+                <button class="option-btn" id="optionsBtn3">C) Option 3</button>
+                <button class="option-btn" id="optionsBtn4">D) Option 4</button>
+            </div>
+
+            <div class="quiz-footer">
+                <div class="progress">
+                    Question <span id="currentQ">1</span> / <span id="totalQ">-</span>
+                </div>
+
+                <button class="next-btn" id="nextBtn" disabled>Next</button>
+            </div>
+
+        </div>
+
+
+        <!-- RESULT SCREEN -->
+        <div class="result-screen" id="resultScreen">
+            <h1>🎉 Quiz Completed!</h1>
+            <p>Your Score: <span id="finalScore">0</span> / <span id="finalTotal">-</span></p>
+
+            <button class="restart-btn" id="restartBtn">Restart Quiz</button>
+        </div>
+
+    </div>
+
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

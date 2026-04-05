@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 35 - Event Listener</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 35 - Event Listener
+    Date: 5-04-2026 | 1:06 PM - 1:42 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="topbar">
+            <div class="brand">
+                <h1>Chapter 35 JavaScript Event Listener</h1>
+                <p>
+                    Ye page 5 DOM tasks cover karta hai: events, text updates, counter, show/hide aur background color
+                    changer.
+                </p>
+            </div>
+            <div class="badge">DOM + addEventListener() Task</div>
+        </div>
+
+        <div class="grid">
+            <!-- Task 1 -->
+            <section class="card">
+                <div class="card-inner">
+                    <div class="card-head">
+                        <div class="title">
+                            <h2>1) Button Click Alert</h2>
+                            <p>Button click par alert message show hoga.</p>
+                        </div>
+                        <div class="pill">Task #01</div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn primary" id="alertBtn">
+                            <span class="icon">⚡</span>
+                            Show Alert
+                        </button>
+                    </div>
+
+                    <p class="note">Focus: <b>addEventListener()</b> aur function call.</p>
+                </div>
+            </section>
+
+            <!-- Task 2 -->
+            <section class="card">
+                <div class="card-inner">
+                    <div class="card-head">
+                        <div class="title">
+                            <h2>2) Change Text on Click</h2>
+                            <p>Button click par text change + reset option.</p>
+                        </div>
+                        <div class="pill">Task #02</div>
+                    </div>
+
+                    <div class="display">
+                        <div>
+                            <div class="label">Current Text</div>
+                            <div class="value" id="textTarget">Hello DOM World 👋</div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn success" id="changeTextBtn">
+                            <span class="icon">✏️</span>
+                            Change Text
+                        </button>
+
+                        <button class="btn danger" id="resetTextBtn">
+                            <span class="icon">↩️</span>
+                            Reset Text
+                        </button>
+                    </div>
+
+                    <p class="note">Tip: Original text store karna important hai.</p>
+                </div>
+            </section>
+
+            <!-- Task 3 -->
+            <section class="card">
+                <div class="card-inner">
+                    <div class="card-head">
+                        <div class="title">
+                            <h2>3) Simple Counter</h2>
+                            <p>Har click par number +1 increase hoga.</p>
+                        </div>
+                        <div class="pill">Task #03</div>
+                    </div>
+
+                    <div class="display">
+                        <div>
+                            <div class="label">Counter Value</div>
+                            <div class="value" id="counterValue">0</div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn primary" id="incBtn">
+                            <span class="icon">➕</span>
+                            Increase
+                        </button>
+
+                        <button class="btn warning" id="resetCounterBtn">
+                            <span class="icon">🔄</span>
+                            Reset
+                        </button>
+                    </div>
+
+                    <p class="note">Focus: DOM update using <b>textContent</b>.</p>
+                </div>
+            </section>
+
+            <!-- Task 4 -->
+            <section class="card">
+                <div class="card-inner">
+                    <div class="card-head">
+                        <div class="title">
+                            <h2>4) Show / Hide Element</h2>
+                            <p>Button click par paragraph hide/show hoga.</p>
+                        </div>
+                        <div class="pill">Task #04</div>
+                    </div>
+
+                    <div class="display" id="toggleBox">
+                        <div>
+                            <div class="label">Message</div>
+                            <div class="value" style="font-size:14px;font-weight:800;">
+                                This paragraph can be hidden 👀
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn primary" id="toggleBtn">
+                            <span class="icon">👁️</span>
+                            Hide
+                        </button>
+                    </div>
+
+                    <p class="note">Focus: <b>element.style.display</b>.</p>
+                </div>
+            </section>
+
+            <!-- Task 5 -->
+            <section class="card" style="grid-column:span 12;">
+                <div class="card-inner">
+                    <div class="card-head">
+                        <div class="title">
+                            <h2>5) Color Changer</h2>
+                            <p>Buttons se div ka background color change hoga.</p>
+                        </div>
+                        <div class="pill">Task #05</div>
+                    </div>
+
+                    <div class="color-box" id="colorBox"></div>
+
+                    <div class="controls">
+                        <button class="btn small primary" id="colorBlue">Blue</button>
+                        <button class="btn small success" id="colorGreen">Green</button>
+                        <button class="btn small warning" id="colorOrange">Orange</button>
+                        <button class="btn small danger" id="colorRed">Red</button>
+                        <button class="btn small" id="colorPurple">Purple</button>
+                        <button class="btn small" id="colorDark">Dark</button>
+                    </div>
+
+                    <p class="note">
+                        Focus: Multiple buttons and multiples (<b>Event Listener</b>).
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            Designed for practice. Built by Sarfraj Shaikh
+        </footer>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

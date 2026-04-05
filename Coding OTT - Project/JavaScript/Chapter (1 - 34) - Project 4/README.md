@@ -22,7 +22,7 @@ Questions ko **Array of Objects** me store karna hai:
     correct: 1
   }
 ]
-
+```
 ---
 
 ## ⚙️ Features

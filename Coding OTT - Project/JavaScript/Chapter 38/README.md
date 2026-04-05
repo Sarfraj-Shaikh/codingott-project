@@ -1,4 +1,4 @@
-# Chapter 38
+# Chapter 38 - Image File Reader
 
 ## Task:
 Please create a project in which a text is displayed saying **"Upload your file"** along with an **upload icon**.  

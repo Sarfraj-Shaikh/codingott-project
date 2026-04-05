@@ -8,7 +8,7 @@
     <link rel="shortcut icon"
         href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
         type="image/x-icon">
-    <title>Chapter 38 - Video File Reader</title>
+    <title>Chapter 38 - Image File Reader</title>
     <!-- I'm Using External JavaScript for Task -->
     <script src="./script.js" defer></script>
     <!-- I'm Using External CSS for Task -->
@@ -24,8 +24,8 @@
     <!--===================================== 
     Student: Mo. Sarfraj Shaikh
     Course: JavaScript
-    Chapter 38 - Video File Reader
-    Date: 5-04-2026 | 4:31 PM - 5:04 PM
+    Chapter 38 - Image File Reader
+    Date: 5-04-2026 | 5:06 PM - 5:22 PM
     =====================================-->
 </head>
 
@@ -34,20 +34,20 @@
     <div class="container">
 
         <div class="upload-box" id="uploadBox">
-            <label for="videoInput" class="upload-label">
+            <label for="imaged" class="upload-label">
                 <div class="icon">
                     ⬆️
                 </div>
-                <p id="uploadText">Upload Your File</p>
+                <p id="uploadText">Upload Your Image</p>
             </label>
-            <input type="file" id="videoInput" accept="video/*" />
+            <input type="file" id="imaged" accept="image/*" />
         </div>
 
-        <video id="videoPlayer" controls></video>
+        <img id="img"></img>
 
         <p id="fileName"></p>
 
-        <button id="uploadAnotherBtn">Upload Another Video</button>
+        <button id="uploadAnotherBtn">Upload Another Image</button>
 
     </div>
 

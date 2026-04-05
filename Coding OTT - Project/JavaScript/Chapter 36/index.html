@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 36 - Time Interval</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 36 - Time Interval
+    Date: 5-04-2026 | 1:45 PM - 3:10 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="top">
+            <div>
+                <h1>Chapter 36 setInterval Task</h1>
+                <p>
+                    Ye page 5 practical tasks cover karta hai: Digital Clock, Countdown Timer, Auto Color Changer, Click Counter with Auto Reset, aur Image Slider.
+                </p>
+            </div>
+            <div class="tag">setInterval() + clearInterval()</div>
+        </div>
+
+        <div class="grid">
+            <!-- Task 1 -->
+            <section class="card">
+                <div class="inner">
+                    <div class="head">
+                        <div class="title">
+                            <h2>1) Simple Digital Clock</h2>
+                            <p>Har 1 second time update hoga.</p>
+                        </div>
+                        <div class="pill">Task #01</div>
+                    </div>
+
+                    <div class="panel">
+                        <div>
+                            <div class="label">Current Time</div>
+                            <div class="value clock" id="clock">--:--:--</div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn red" id="stopClockBtn">
+                            <span class="icon">⏹️</span>
+                            Stop Clock
+                        </button>
+
+                        <button class="btn green" id="startClockBtn">
+                            <span class="icon">▶️</span>
+                            Start Clock
+                        </button>
+                    </div>
+
+                    <p class="note">Stop button clearInterval() call karega.</p>
+                </div>
+            </section>
+
+            <!-- Task 2 -->
+            <section class="card">
+                <div class="inner">
+                    <div class="head">
+                        <div class="title">
+                            <h2>2) Countdown Timer</h2>
+                            <p>Har second number 1 se decrease hoga.</p>
+                        </div>
+                        <div class="pill">Task #02</div>
+                    </div>
+
+                    <div class="panel">
+                        <div>
+                            <div class="label">Countdown</div>
+                            <div class="value" id="countdownValue">10</div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn blue" id="startCountdownBtn">
+                            <span class="icon">⏳</span>
+                            Start
+                        </button>
+
+                        <button class="btn orange" id="restartCountdownBtn">
+                            <span class="icon">🔁</span>
+                            Restart
+                        </button>
+
+                        <button class="btn red" id="stopCountdownBtn">
+                            <span class="icon">⏹️</span>
+                            Stop
+                        </button>
+                    </div>
+
+                    <p class="note">0 par alert("Time’s up!") show hoga.</p>
+                </div>
+            </section>
+
+            <!-- Task 3 -->
+            <section class="card">
+                <div class="inner">
+                    <div class="head">
+                        <div class="title">
+                            <h2>3) Automatic Color Changer</h2>
+                            <p>Har 1-2 second me random color change.</p>
+                        </div>
+                        <div class="pill">Task #03</div>
+                    </div>
+
+                    <div class="colorBox" id="autoColorBox"></div>
+
+                    <div class="controls">
+                        <button class="btn green" id="startColorBtn">
+                            <span class="icon">🎨</span>
+                            Start
+                        </button>
+
+                        <button class="btn red" id="stopColorBtn">
+                            <span class="icon">🛑</span>
+                            Stop
+                        </button>
+                    </div>
+
+                    <p class="note">Random RGB generate hoga.</p>
+                </div>
+            </section>
+
+            <!-- Task 4 -->
+            <section class="card">
+                <div class="inner">
+                    <div class="head">
+                        <div class="title">
+                            <h2>4) Click Counter with Auto Reset</h2>
+                            <p>Clicks count hoga, har 5 sec reset.</p>
+                        </div>
+                        <div class="pill">Task #04</div>
+                    </div>
+
+                    <div class="panel">
+                        <div>
+                            <div class="label">Clicks</div>
+                            <div class="value" id="clickCount">0</div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn blue" id="clickBtn">
+                            <span class="icon">🖱️</span>
+                            Click Me
+                        </button>
+
+                        <button class="btn red" id="stopAutoResetBtn">
+                            <span class="icon">⛔</span>
+                            Stop Auto Reset
+                        </button>
+
+                        <button class="btn green" id="startAutoResetBtn">
+                            <span class="icon">✅</span>
+                            Start Auto Reset
+                        </button>
+                    </div>
+
+                    <p class="note">Auto reset interval 5 seconds ka hai.</p>
+                </div>
+            </section>
+
+            <!-- Task 5 -->
+            <section class="card" style="grid-column:span 12;">
+                <div class="inner">
+                    <div class="head">
+                        <div class="title">
+                            <h2>5) Image Slider (Simple)</h2>
+                            <p>Har 3 second me next image show hogi (loop).</p>
+                        </div>
+                        <div class="pill">Task #05</div>
+                    </div>
+
+                    <div class="slider">
+                        <img id="sliderImg" src="" alt="Slider Image">
+
+                        <div class="caption">
+                            <span id="sliderText">Image 1 / 4</span>
+                            <span id="sliderStatus">Auto: ON</span>
+                        </div>
+
+                        <div class="controls">
+                            <button class="btn purple" id="prevBtn">
+                                <span class="icon">⬅️</span>
+                                Previous
+                            </button>
+
+                            <button class="btn blue" id="nextBtn">
+                                <span class="icon">➡️</span>
+                                Next
+                            </button>
+
+                            <button class="btn red" id="stopSliderBtn">
+                                <span class="icon">⏹️</span>
+                                Stop Auto
+                            </button>
+
+                            <button class="btn green" id="startSliderBtn">
+                                <span class="icon">▶️</span>
+                                Start Auto
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="note">
+                        Manual click pe auto sliding stop ho jayegi (clearInterval()).
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            Chapter 36 practice project - Made by Sarfraj
+        </footer>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

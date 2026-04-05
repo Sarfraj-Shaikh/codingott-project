@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+
+    <title>Chapter 39 - Word Editor</title>
+
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+    <!-- Remix Icon CDN (ONLY ONE) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 39 - Word Editor
+    Date: 5-04-2026 | 5:25 PM - 6:55 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <h2><i class="ri-file-word-2-fill"></i> Word Editor Built By Sarfraj</h2>
+    </header>
+
+    <div class="ribbon">
+
+        <!-- Clipboard -->
+        <div class="group">
+            <p class="group-title">Clipboard</p>
+
+            <div class="btn-row">
+                <button class="btn" title="Cut" id="cut">
+                    <i class="ri-scissors-cut-fill"></i>
+                </button>
+
+                <button class="btn" title="Copy" id="copy">
+                    <i class="ri-file-copy-fill"></i>
+                </button>
+
+                <button class="btn" title="Paste" id="paste">
+                    <i class="ri-clipboard-fill"></i>
+                </button>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn" title="Delete" id="delete">
+                    <i class="ri-delete-bin-6-fill"></i>
+                </button>
+
+                <button class="btn" title="Forward Delete" id="forwardDelete">
+                    <i class="ri-delete-bin-5-fill"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Font -->
+        <div class="group">
+            <p class="group-title">Font</p>
+
+            <div class="btn-row">
+                <button class="btn" title="Bold" id="bold">
+                    <i class="ri-bold"></i>
+                </button>
+
+                <button class="btn" title="Strikethrough" id="strikethrough">
+                    <i class="ri-strikethrough"></i>
+                </button>
+
+                <button class="btn" title="Superscript" id="superscript">
+                    <i class="ri-superscript"></i>
+                </button>
+            </div>
+
+            <select class="dropdown" id="fontName">
+                <option value="">Font Name</option>
+                <option value="Calibri">Calibri</option>
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+
+            <select class="dropdown" id="fontSize">
+                <option value="">Font Size</option>
+                <option value="1">8</option>
+                <option value="2">10</option>
+                <option value="3">12</option>
+                <option value="4">14</option>
+                <option value="5">18</option>
+                <option value="6">24</option>
+                <option value="7">36</option>
+            </select>
+
+            <div class="btn-row">
+                <label class="color-box" title="Text Color">
+                    <i class="ri-font-color"></i>
+                    <input type="color" id="foreColor" />
+                </label>
+
+                <label class="color-box" title="Background Color">
+                    <i class="ri-paint-fill"></i>
+                    <input type="color" id="backColor" />
+                </label>
+            </div>
+        </div>
+
+        <!-- Paragraph -->
+        <div class="group">
+            <p class="group-title">Paragraph</p>
+
+            <div class="btn-row">
+                <button class="btn" title="Align Left" id="justifyLeft">
+                    <i class="ri-align-left"></i>
+                </button>
+
+                <button class="btn" title="Align Center" id="justifyCenter">
+                    <i class="ri-align-center"></i>
+                </button>
+
+                <button class="btn" title="Align Right" id="justifyRight">
+                    <i class="ri-align-right"></i>
+                </button>
+
+                <button class="btn" title="Justify" id="justifyFull">
+                    <i class="ri-align-justify"></i>
+                </button>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn" title="Ordered List" id="insertOrderedList">
+                    <i class="ri-list-ordered"></i>
+                </button>
+
+                <button class="btn" title="Unordered List" id="insertUnorderedList">
+                    <i class="ri-list-unordered"></i>
+                </button>
+
+                <button class="btn" title="Outdent" id="outdent">
+                    <i class="ri-indent-decrease"></i>
+                </button>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn" title="Insert Paragraph" id="insertParagraph">
+                    <i class="ri-paragraph"></i>
+                </button>
+
+                <button class="btn" title="Line Break" id="insertLineBreak">
+                    <i class="ri-text-wrap"></i>
+                </button>
+            </div>
+
+            <button class="btn full-btn" title="Default Paragraph Separator" id="defaultParagraphSeparator">
+                Default P
+            </button>
+        </div>
+
+        <!-- Insert -->
+        <div class="group">
+            <p class="group-title">Insert</p>
+
+            <div class="btn-row">
+                <button class="btn" title="Insert Link" id="createLink">
+                    <i class="ri-link"></i>
+                </button>
+
+                <button class="btn" title="Unlink" id="unlink">
+                    <i class="ri-link-unlink"></i>
+                </button>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn" title="Insert Image" id="insertImage">
+                    <i class="ri-image-add-fill"></i>
+                </button>
+
+                <button class="btn" title="Insert HR" id="insertHorizontalRule">
+                    <i class="ri-separator"></i>
+                </button>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn" title="Insert HTML" id="insertHTML">
+                    <i class="ri-code-s-slash-line"></i>
+                </button>
+
+                <button class="btn" title="Insert Text" id="insertText">
+                    <i class="ri-text"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Edit -->
+        <div class="group">
+            <p class="group-title">Edit</p>
+
+            <div class="btn-row">
+                <button class="btn" title="Undo" id="undo">
+                    <i class="ri-arrow-go-back-line"></i>
+                </button>
+
+                <button class="btn" title="Redo" id="redo">
+                    <i class="ri-arrow-go-forward-line"></i>
+                </button>
+
+                <button class="btn" title="Select All" id="selectAll">
+                    <i class="ri-checkbox-multiple-line"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Blocks -->
+        <div class="group">
+            <p class="group-title">Blocks</p>
+
+            <select class="dropdown" id="formatBlock">
+                <option value="">Format Block</option>
+                <option value="<h1>">Heading 1</option>
+                <option value="<h2>">Heading 2</option>
+                <option value="<h3>">Heading 3</option>
+                <option value="<h4>">Heading 4</option>
+                <option value="<h5>">Heading 5</option>
+                <option value="<h6>">Heading 6</option>
+                <option value="<p>">Paragraph</option>
+                <option value="<blockquote>">Blockquote</option>
+                <option value="<pre>">Code</option>
+            </select>
+        </div>
+
+    </div>
+
+    <main class="workspace">
+        <div id="editor" class="editor" contenteditable="true" spellcheck="false">
+            Start typing here like MS Word... <br>
+            This project was made by <b>Sarfraj Shaikh</b>
+        </div>
+    </main>
+
+</body>
+
+</html>

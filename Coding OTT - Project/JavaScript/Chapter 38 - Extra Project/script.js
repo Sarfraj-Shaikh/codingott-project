@@ -49,9 +49,9 @@ function uploadImageFile(files) {
             removeBtn.className = "remove-btn";
             removeBtn.textContent = "Remove";
 
-            let media = document.createElement("img");
+            let media = document.createElement("video");
             media.src = readFile.result;
-            media.alt = file.name;
+            media.controls = true;
 
             const info = document.createElement("div");
             info.className = "preview-info";

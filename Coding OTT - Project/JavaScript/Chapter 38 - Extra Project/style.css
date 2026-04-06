@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+:root {
+  --bg: #0b1220;
+  --card: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.12);
+  --text: #eaf0ff;
+  --muted: rgba(234, 240, 255, 0.7);
+  --accent: #4f8cff;
+  --accent-2: #22d3ee;
+  --danger: #ff4d4d;
+  --success: #34d399;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  --radius: 18px;
+}
+
+body {
+  background: radial-gradient(circle at top left, rgba(79, 140, 255, 0.35), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.25), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 30px 16px;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px);
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.header p {
+  color: var(--muted);
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.badge {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #0b1220;
+  white-space: nowrap;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 18px;
+}
+
+.upload-card,
+.preview-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.upload-top h2,
+.preview-top h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtext {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.drop-zone {
+  margin-top: 18px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius);
+  padding: 26px 18px;
+  text-align: center;
+  transition: 0.25s ease;
+  position: relative;
+}
+
+.drop-zone.dragover {
+  border-color: var(--accent);
+  background: rgba(79, 140, 255, 0.08);
+}
+
+.drop-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.drop-zone h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.drop-zone p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 12px;
+  color: rgba(234, 240, 255, 0.55);
+}
+
+.btn {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #0b1220;
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  background: rgba(79, 140, 255, 0.08);
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stats {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.stats span {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.error-box {
+  margin-top: 18px;
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid rgba(255, 77, 77, 0.35);
+  background: rgba(255, 77, 77, 0.12);
+  color: rgba(255, 230, 230, 0.95);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.preview-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  min-height: 200px;
+}
+
+.preview-item {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: 0.25s ease;
+}
+
+.preview-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(79, 140, 255, 0.5);
+}
+
+.preview-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.preview-info {
+  padding: 10px 12px;
+}
+
+.file-name {
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-meta {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: rgba(255, 77, 77, 0.75);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  border: 2px dashed rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.empty-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.empty-state h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.empty-state p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(234, 240, 255, 0.55);
+  padding: 12px;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 18px;
+  }
+
+  .upload-card,
+  .preview-card {
+    padding: 16px;
+  }
+}

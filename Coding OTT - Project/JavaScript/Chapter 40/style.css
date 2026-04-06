@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header p {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.note-card {
+  border: 1px solid rgba(255, 255, 0, 0.25);
+  background: rgba(255, 255, 0, 0.08);
+}
+
+.note-card ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.note-card li {
+  margin: 6px 0;
+}
+
+.message-box {
+  background: rgba(79, 140, 255, 0.15);
+  border: 1px solid rgba(79, 140, 255, 0.3);
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.message-box h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.message-box p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4f8cff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.card h3 {
+  margin: 0 0 15px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #4f8cff;
+  color: #0b1220;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #22d3ee;
+  transform: translateY(-2px);
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+  }
+}

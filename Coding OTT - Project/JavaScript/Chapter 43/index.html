@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+
+    <title>Chapter 43</title>
+
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+    <!-- Remix Icon CDN (ONLY ONE) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 43
+    Date: 7-04-2026 | 10:49 AM - 11:09 AM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="card-form-container">
+        <h2>Card Number</h2>
+        <p>Please enter your 16-digit credit/debit card number.</p>
+
+        <div class="inputs-wrapper">
+            <input type="text" inputmode="numeric" maxlength="4" placeholder="1234" class="card-input" id="card-1" autocomplete="off" oninput="autoFocus(this, 'card-2')" onkeydown="moveBack(event, this, 'card-1')"/>
+
+            <input type="text" inputmode="numeric" maxlength="4" placeholder="5678" class="card-input" id="card-2" autocomplete="off" oninput="autoFocus(this, 'card-3')" onkeydown="moveBack(event, this, 'card-1')"/>
+
+            <input type="text" inputmode="numeric" maxlength="4" placeholder="9012" class="card-input" id="card-3" autocomplete="off" oninput="autoFocus(this, 'card-4')" onkeydown="moveBack(event, this, 'card-2')"/>
+
+            <input type="text" inputmode="numeric" maxlength="4" placeholder="3456" class="card-input" id="card-4" autocomplete="off" onkeydown="moveBack(event, this, 'card-3')"/>
+        </div>
+
+        <p class="note">
+            Credit: Made with <span>🫀</span> by Sarfraj Shaikh
+        </p>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+
+</body>
+
+</html>

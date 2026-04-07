@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+
+    <title>Chapter 47 - Task 2</title>
+
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+    <!-- Remix Icon CDN (ONLY ONE) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 47 - Task 2
+    Date: 7-04-2026 | 2:22 PM - 2:40 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="main-content">
+        <h1>Welcome to Our Website</h1>
+        <p>
+            This is a demo website. On first visit, you will be asked to enter your mobile number.
+            Once submitted, the popup will not appear again.
+        </p>
+    </div>
+
+    <div class="main-content" id="numResultBg">
+        <h1>Mobile Number</h1>
+        <p id="numResult"></p>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <h2>Enter Your Mobile Number</h2>
+            <p>
+                Please enter your mobile number to continue.
+                This popup will not close until you submit.
+            </p>
+
+            <input type="text" id="mobileInput" placeholder="03XXXXXXXXX" maxlength="10" inputmode="numeric" autocomplete="off" />
+
+            <button id="submitMobileBtn">
+                Submit
+            </button>
+
+            <p class="error-msg" id="errorMsg">
+                Please enter a valid mobile number!
+            </p>
+        </div>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+
+</body>
+
+</html>

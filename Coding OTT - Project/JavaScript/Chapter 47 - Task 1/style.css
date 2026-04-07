@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.download-container {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.download-container h2 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.download-container p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.image-preview {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.image-preview img {
+  width: 100%;
+  display: block;
+}
+
+.countdown-box {
+  font-size: 18px;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.countdown-box span {
+  color: white;
+  font-size: 22px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.03);
+}
+
+.reset-btn {
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: none;
+}
+
+.reset-btn:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+@media (max-width: 480px) {
+  .download-container {
+    padding: 20px;
+  }
+
+  .download-btn,
+  .reset-btn {
+    width: 100%;
+  }
+}

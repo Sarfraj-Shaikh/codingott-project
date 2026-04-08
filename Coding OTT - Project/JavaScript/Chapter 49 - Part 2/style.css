@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* ==== Main Wrapper ==== */
+.app {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* ==== Card ==== */
+.status-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 40px 30px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease;
+}
+
+/* ==== Icon Circle ==== */
+.status-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ==== Heading ==== */
+.status-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* ==== Description ==== */
+.status-text {
+  font-size: 15px;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* ==== Bottom Indicator ==== */
+.status-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ==== Dot ==== */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: gray;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* ==== Online State ==== */
+.online .status-icon {
+  background: rgba(34, 197, 94, 0.18);
+  border-color: rgba(34, 197, 94, 0.55);
+}
+
+.online .dot {
+  background: #22c55e;
+}
+
+.online .status-title {
+  color: #22c55e;
+}
+
+/* ==== Offline State ==== */
+.offline .status-icon {
+  background: rgba(239, 68, 68, 0.18);
+  border-color: rgba(239, 68, 68, 0.55);
+}
+
+.offline .dot {
+  background: #ef4444;
+}
+
+.offline .status-title {
+  color: #ef4444;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 480px) {
+  .status-card {
+    padding: 30px 20px;
+  }
+
+  .status-title {
+    font-size: 22px;
+  }
+
+  .status-text {
+    font-size: 14px;
+  }
+
+  .status-icon {
+    width: 75px;
+    height: 75px;
+    font-size: 28px;
+  }
+}

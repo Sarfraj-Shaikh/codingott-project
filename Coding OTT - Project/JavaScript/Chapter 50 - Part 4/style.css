@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Wrapper */
+.cookie-app {
+  width: 100%;
+  max-width: 620px;
+}
+
+/* Card */
+.cookie-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(14px);
+  color: white;
+  text-align: center;
+}
+
+/* Image */
+.promo-image {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Text */
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Main Buttons */
+.action-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.primary:hover {
+  background: #1d4ed8;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+}
+
+.danger:hover {
+  background: #b91c1c;
+}
+
+/* Remind Buttons */
+.remind-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.small-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.small-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Welcome Box */
+.welcome-box {
+  padding: 40px 20px;
+}
+
+.welcome-title {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #22c55e;
+}
+
+.welcome-text {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Cookie Error */
+.error-box {
+  padding: 40px 20px;
+}
+
+.error-title {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #f97316;
+}
+
+.error-text {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Hide/Show Utility */
+.hidden {
+  display: none;
+}
+
+.remind-box {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: left;
+  display: none;
+}
+
+.remind-title {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.remind-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.remind-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  transition: 0.2s ease;
+}
+
+.remind-option:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.remind-option input {
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.remind-option span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: #22c55e;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #16a34a;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .action-row {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .welcome-title {
+    font-size: 24px;
+  }
+}

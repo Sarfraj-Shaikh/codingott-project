@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+    type="image/x-icon">
+
+  <title>Chapter 50 - Part 4</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <script src="./script.js" defer></script>
+
+  <!-- Remix Icon CDN (ONLY ONE) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 50 - Part 4
+    Date: 8-04-2026 | 11:44 AM - 1:07 PM
+    =====================================-->
+</head>
+
+<body>
+
+  <div class="cookie-app">
+
+    <div class="cookie-card" id="cookieCard">
+
+      <!-- IMAGE SECTION -->
+      <div class="image-box" id="imageBox">
+        <img src="https://cdn1.desidime.com/SEO/Flipkart-BigSavingDays-NoDates-Desidime-Festival-Banner-SEO-2ndApril2023.jpg" alt="Special Offer" class="promo-image"  loading="lazy"/>
+
+        <h2 class="title">Special Offer Just For You 🎁</h2>
+        <p class="desc">
+          We use cookies to remember your preferences. Choose an option below.
+        </p>
+
+        <!-- MAIN BUTTONS -->
+        <div class="action-row" id="action-row">
+          <button class="btn danger" id="dontShowBtn">Don't Show Again</button>
+          <button class="btn primary" id="remindBtn">Remind Me Later</button>
+        </div>
+
+        <!-- REMIND SELECT BOX -->
+        <div class="remind-box" id="remindBox">
+          <h3 class="remind-title">Choose Reminder Time</h3>
+
+          <div class="remind-list">
+
+            <label class="remind-option">
+              <input type="radio" name="remindTime" value="7" oninput="remindLater(this.value, '1 Week')"/>
+              <span>1 Week</span>
+            </label>
+
+            <label class="remind-option">
+              <input type="radio" name="remindTime" value="15" oninput="remindLater(this.value, '15 Days')"/>
+              <span>15 Days</span>
+            </label>
+
+            <label class="remind-option">
+              <input type="radio" name="remindTime" value="30" oninput="remindLater(this.value, '1 Month')"/>
+              <span>1 Month</span>
+            </label>
+
+          </div>
+
+          <button class="btn confirm-btn" id="confirmRemindBtn">
+            Confirm Selection
+          </button>
+        </div>
+      </div>
+
+      <!-- WELCOME SECTION -->
+      <div class="welcome-box hidden" id="welcomeBox">
+        <h1 class="welcome-title">Welcome Back 👋</h1>
+        <p class="welcome-text" id="welcome-text">
+          Your preferences have been saved. Enjoy your experience.
+        </p>
+      </div>
+
+      <!-- COOKIE DISABLED MESSAGE -->
+      <div class="error-box hidden" id="cookieError">
+        <h2 class="error-title">Cookies Disabled ⚠</h2>
+        <p class="error-text">
+          Your browser cookies are disabled. Please enable cookies to continue.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+
+</body>
+
+</html>

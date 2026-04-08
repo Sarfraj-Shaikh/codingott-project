@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+    type="image/x-icon">
+
+  <title>Chapter 50 - Part 6</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <script src="./script.js" defer></script>
+
+  <!-- Remix Icon CDN (ONLY ONE) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 50 - Part 6
+    Date: 8-04-2026 | 4:08 PM - 6:25 PM
+    =====================================-->
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-flex">
+      <h1 class="logo">User Registration CRUD</h1>
+      <p class="tagline">Local Storage Based CRUD System</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container grid">
+
+      <!-- FORM CARD -->
+      <section class="card">
+        <h2 class="card-title">Register User</h2>
+        <p class="card-subtitle">Fill the form and manage users using CRUD.</p>
+
+        <form class="form">
+
+          <div class="form-group">
+            <label for="userId">User ID</label>
+            <input type="text" id="userId" placeholder="e.g. 101">
+          </div>
+
+          <div class="form-group">
+            <label for="userName">Full Name</label>
+            <input type="text" id="userName" placeholder="e.g. Ali Khan">
+          </div>
+
+          <div class="form-group">
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" placeholder="e.g. ali@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="userPhone">Phone</label>
+            <input type="text" id="userPhone" placeholder="e.g. 03001234567" maxlength="10" inputmode="numeric">
+          </div>
+
+          <div class="form-group">
+            <label for="userPass">Password</label>
+            <input type="password" id="userPass" placeholder="Enter password" minlength="8">
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" onclick="adddata()" id="createBtn">Create</button>
+            <button type="button" class="btn btn-secondary" onclick="updateData()" id="editBtn">Update</button>
+          </div>
+
+        </form>
+
+        <div id="message" class="message-box">
+          Welcome! Register a user to start.
+        </div>
+      </section>
+
+      <!-- LIST CARD -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">Registered Users</h2>
+          <p class="card-subtitle">All saved users from Local Storage</p>
+        </div>
+
+        <div class="no-user-box" id="noUserBox">
+          <div class="no-user-icon">📭</div>
+          <h3>No Users Found</h3>
+          <p>
+            Your user list is currently empty.
+            Add a new user using the registration form.
+          </p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="user-table" id="userTable">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Password</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="userList">
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <p>© 2026 CRUD Registration System</p>
+      <p class="small">Built with 🫀 By <b>Sarfraj Shaikh</b></p>
+    </div>
+  </footer>
+
+  <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+
+</body>
+
+</html>

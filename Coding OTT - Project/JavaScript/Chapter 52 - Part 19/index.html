@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 52: Part 19</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 52: Part 19
+    Date: 7-05-2026 | 1:42 PM - 1:59 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>PDF Converter Tool</h1>
+            <p>Convert your specific webpage section into a professional PDF file</p>
+        </div>
+
+        <div class="content">
+
+            <!-- Target Section -->
+            <div class="pdf-box" id="pdfSection">
+                <h2>Invoice / Report Preview</h2>
+
+                <p>
+                    Ye section PDF me convert hoga. Aap isme reports, invoice, resume ya koi bhi content rakh sakte
+                    ho.
+                </p>
+
+                <p>
+                    <b>Date:</b> 7-May-2026 <br>
+                    <b>Developed By:</b> Sarfraj Shaikh <br>
+                    <b>Status:</b> Completed
+                </p>
+
+                <div class="highlight">
+                    <b>Note:</b> Is PDF converter me html2canvas + jsPDF use ho raha hai, isliye design mostly same
+                    output dega.
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-area">
+
+                <div class="file-name-box">
+                    <label>PDF File Name</label>
+                    <input type="text" id="pdfFileName" placeholder="Enter file name (example: report.pdf)">
+                </div>
+
+                <button id="downloadPdf" onclick="savePDF()">
+                    📄 Download PDF
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © 2026 PDF Tool | Developed With 🫀 By Sarfraj Shaikh
+        </div>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

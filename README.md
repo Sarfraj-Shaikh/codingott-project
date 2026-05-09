@@ -38,6 +38,8 @@ Agar aapko **sirf JavaScript projects ka source code** chahiye — toh niche diy
 
 🔗 **JavaScript Repo Link:** [Click Here To View](https://github.com/Sarfraj-Shaikh/codingott-project/tree/main/Coding%20OTT%20-%20Project/JavaScript)
 
+🔗 **JavaScript 75 DAYS - V1:** [Click Here To View](https://github.com/Sarfraj-Shaikh/codingott-project/tree/main/Coding%20OTT%20-%20Project/JavaScript)
+
 ---
 
 ## 🛠 Tech Stack Used

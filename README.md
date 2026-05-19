@@ -40,6 +40,18 @@ Agar aapko **sirf JavaScript projects ka source code** chahiye — toh niche diy
 
 ---
 
+## 📁 MongoDB Source Code Repository
+Agar aapko **sirf MongoDB ka source code** chahiye — toh niche diya gaya repository link visit karein.
+
+**Is repo me:**
+- Abhi tak banaye gaye **saare MongoDB Commands**
+- Proper folder structure ke sath
+- Clean aur readable code
+
+🔗 **Repo Link:** [Click Here To View](https://github.com/Sarfraj-Shaikh/codingott-project/tree/main/Coding%20OTT%20-%20Project/Mongo%20DB)
+
+---
+
 ## 🛠 Tech Stack Used
 Ye projects mainly **frontend development** par focus karte hain.
 

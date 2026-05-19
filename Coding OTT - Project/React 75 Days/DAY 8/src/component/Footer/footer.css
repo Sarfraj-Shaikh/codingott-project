@@ -1,0 +1,224 @@
+.footerBg {
+    width: 100%;
+    background-color: #20263E;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 100px 40px;
+    gap: 50px;
+}
+.com-info,
+.pop-links,
+.social-link,
+.form {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+}
+
+/* ================= COMPANY INFO ================= */
+.com-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    gap: 10px;
+}
+
+.com-info .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.com-info .logo img {
+    width: 35px;
+    border-radius: 100%;
+}
+
+.com-info .logo p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.com-info p {
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
+/* ================= POPULAR LINKS ================= */
+.pop-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    gap: 15px;
+}
+
+.pop-links p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pop-links ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.pop-links ul li {
+    font-size: 14px;
+}
+
+.pop-links ul li a {
+    text-decoration: none;
+    color: #d0d0d0;
+    transition: 0.3s ease-in;
+}
+
+.pop-links ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+/* ================= SOCIAL LINKS ================= */
+.social-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    gap: 15px;
+}
+
+.social-link p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-link ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.social-link ul li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link ul li a {
+    text-decoration: none;
+    color: #d0d0d0;
+    transition: 0.3s ease-in;
+}
+
+.social-link ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+/* ================= FORM SECTION ================= */
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    gap: 15px;
+}
+
+.form p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form form input {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.form form textarea {
+    width: 100%;
+    max-width: 350px;
+    height: 90px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 10px;
+    color: black;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+/* Focus effect */
+.form form input:focus,
+.form form textarea:focus {
+    border: 2px solid #4A5BFF;
+}
+
+/* ================= BUTTON ================= */
+.form form button {
+    width: 100%;
+    height: 45px;
+    max-width: 350px;
+    background: linear-gradient(135deg, #4A5BFF, #7A3CFF);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.form form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(74, 91, 255, 0.4);
+    background: linear-gradient(135deg, #7A3CFF, #4A5BFF);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .com-info,
+    .pop-links,
+    .social-link,
+    .form {
+        max-width: 100%;
+    }
+
+    .form form input,
+    .form form textarea,
+    .form form button {
+        max-width: 100%;
+    }
+}
